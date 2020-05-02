@@ -1,0 +1,27 @@
+.Landingpage {
+	background-color:#009869;
+}
+
+.button {
+	font-family: 'RobotoCondensed Regular', sans-serif;
+	text-decoration:none;
+	color:#ffffff;
+	background-color:#005977;
+	cursor:pointer;
+	width:180px;
+  height: 2em;
+	margin: 6px;
+  display: flex;
+  align-items: center;
+	justify-content: center;
+	transition-duration: 0.4s;
+	border-radius: 2px;
+}
+.button:hover {
+	background-color:#05402a;
+}
+
+.diceimg {
+	width:100px;
+	margin-bottom:10px;
+}

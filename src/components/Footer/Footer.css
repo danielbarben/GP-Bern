@@ -1,0 +1,14 @@
+.Footer {
+  text-align: center;
+  background: #009869;
+  color: white;
+  width: 100%;
+  height: 30px;
+}
+
+.Footer p {
+  font-family: 'RobotoCondensed Regular';
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
