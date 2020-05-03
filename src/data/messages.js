@@ -103,8 +103,7 @@ let messages = {
    102:"kämpft am Aargauerstalden",
    103:"passiert Kilometer 15",
    104:"biegt in die Bolligenstrasse ein",
-   
-   106:"biegt in die Bolligenstrasse ein",
+   105:"biegt in die Bolligenstrasse ein",
    
    108:"setzt zum Schlussspurt auf der Mingerstrasse an",
    109:"setzt zum Schlussspurt auf der Mingerstrasse an",

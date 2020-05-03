@@ -166,6 +166,7 @@ roll(player) {
   let pos = this.state.players[player].pos;
   dice = (pos + dice) > 113 ? 113-pos : dice
   let newPos = (pos + dice);
+  //Aktionsfeld?
   if (Actions[newPos]) {
     let newPlayers = this.state.players;
     newPlayers[player]['action'] = newPos;

@@ -240,8 +240,8 @@ function svgmap() {
 	<rect x="140" y="290" width="40" height="40"/>
 
 	<rect class="aktion" x="140" y="250" width="40" height="40"/>
-	<rect x="140" y="210" width="40" height="40"/>
-	<rect class="aktion" x="140" y="170" width="40" height="40"/>
+	<rect class="aktion" x="140" y="210" width="40" height="40"/>
+	<rect x="140" y="170" width="40" height="40"/>
 
 	<rect x="140" y="130" width="40" height="40"/>
 	<rect x="180" y="130" width="40" height="40"/>

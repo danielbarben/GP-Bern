@@ -15,7 +15,7 @@ let actions = {
   88: {msg:"Diese nervigen Pflastersteine! Du stolperst und musst die Schuhe neu binden. 1x Aussetzen",action:1},
   100: {msg:"Du hast das Gefühl, du stehst unten an der Eigernordwand, aber du besiegst deine Selbstzweifel. 6 Felder vorrücken",action:4},
   105: {msg:"Zu wenig trainiert! Ein Krampf in der Wade bremst deinen Schlussspurt. 1x Aussetzen",action:1},
-  107: {msg:"Du hast noch Reserven und ziehst durch. Direkt ins Ziel",action:4}
+  106: {msg:"Du hast noch Reserven und ziehst durch. 6 Felder vorrücken",action:4}
 };
 export default actions
 
