@@ -1,12 +1,12 @@
 .Landingpage {
-	background-color:#009869;
+	background-color:rgba(171, 189, 0, 0.8)
 }
 
 .button {
 	font-family: 'RobotoCondensed Regular', sans-serif;
 	text-decoration:none;
 	color:#ffffff;
-	background-color:#005977;
+	background-color:#00759d;
 	cursor:pointer;
 	width:180px;
   height: 2em;

@@ -16,7 +16,7 @@ class Running extends Component {
   }
 
   //0:rot, 1:weiss, 2: blue, 3: orange
-  colors = ['#c00830', '#FFFFFF', '#005977', '#f59d24', '#009869', '#c13286']
+  colors = ['#c00830', '#FFFFFF', '#009fe3', '#f59d24', '#009869', '#c13286']
   //Positionen für Spielsteine
   positions = [[360,30],[400,30],[440,30],[440,70],[440,110],[440,150],[480,150],[520,150],[560,150],[600,150],[640,150],[680,150],[680,190],[680,230],[680,270],[640,270],[600,270],[560,270],[520,270],[480,270],[440,270],[440,310],[440,350],[440,390],[480,390],[520,390],[560,390],[560,430],[560,470],[560,510],[520,510],[480,510],[440,510],[400,510],[360,510],[360,550],[360,590],[360,630],[400,630],[440,630],[440,670],[480,670],[520,670],[560,670],[560,630],[560,590],[600,590],[640,590],[680,590],[720,590],[720,630],[720,670],[720,710],[720,750],[720,790],[720,830],[680,830],[640,830],[600,830],[560,830],[520,830],[480,830],[440,830],[440,790],[440,750],[400,750],[360,750],[320,750],[280,750],[280,790],[280,830],[240,830],[200,830],[160,830],[120,830],[80,830],[40,830],[40,790],[40,750],[40,710],[40,670],[40,630],[80,630],[120,630],[160,630],[200,630],[240,630],[240,590],[240,550],[240,510],[200,510],[160,510],[160,470],[160,430],[160,390],[200,390],[240,390],[280,390],[320,390],[320,350],[320,310],[280,310],[240,310],[200,310],[160,310],[160,270],[160,230],[160,190],[160,150],[200,150],[240,150],[280,150],[320,150],[320,110]];
 
@@ -125,7 +125,6 @@ doActions = (player) => {
         let newPlayers = this.state.players;
         newPlayers[player]['twice'] = false;
         newPlayers[otherPlayer]['twice'] = false;
-        console.log(newPlayers)
         this.setState({
           players: newPlayers
         })
@@ -145,7 +144,7 @@ doActions = (player) => {
     setTimeout(function() {
       let moveX = steps[i][0] - 360;
       let moveY = steps[i][1] - 30;
-      tile.style.transform = "translate(" + moveX + "px," + moveY + "px)";
+      tile.style.transform = `translate(${moveX}px,${moveY}px)`;
       i++;
       if (i < steps.length) {
         movesteps();
@@ -203,10 +202,10 @@ roll(player) {
       this.move(steps,tile,this.nextMove,player)
     }
     //Nachricht aktualisieren
-    let newMsg = (Messages[newPos]) ? " und " + Messages[newPos] : "";
+    let newMsg = (Messages[newPos]) ? `und ${Messages[newPos]}` : "";
     let who = this.state.players[player].name
     this.setState({
-      message: `${who} hat eine ${dice} gewürfelt${newMsg}`,
+      message: `${who} hat eine ${dice} gewürfelt ${newMsg}`,
   })
 }
 
@@ -224,7 +223,7 @@ prepare = () => {
   let random = Math.floor(Math.random() * Math.floor(2));
   let first = ['blue','orange'];
   this.activateDice(first[random]);
-  let newMsg = this.state.players[first[random]].name + " " + Messages[0];    
+  let newMsg = `${this.state.players[first[random]].name} ${Messages[0]}`;    
   this.setState({
     message: newMsg,
   })

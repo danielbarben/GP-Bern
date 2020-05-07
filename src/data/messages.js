@@ -96,9 +96,9 @@ let messages = {
    95:"läuft durch die Altstadt",
    96:"läuft durch die Altstadt",
    97:"passiert Kilometer 14",
-   98:"passiert Kilometer 14",
-   99:"passiert Kilometer 14",
    
+   99:"passiert Kilometer 14",
+   100: "passiert Kilometer 14",
    101:"kämpft am Aargauerstalden",
    102:"kämpft am Aargauerstalden",
    103:"passiert Kilometer 15",

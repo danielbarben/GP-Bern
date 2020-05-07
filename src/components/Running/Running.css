@@ -1,11 +1,12 @@
 .Running {
-  background-color:#009869;
+  background-color: rgba(171, 189, 0, 0.8)
   }
 
 .subtitle {
   font-family: 'RobotoCondensed Regular', sans-serif;
   font-size: 1.2em;
   margin:0 0 5px 0;
+  text-shadow: 0 0 0.1em rgb(10, 10, 20);
 }
 
 #svgMap {
@@ -24,7 +25,7 @@
 
 .message {
   width: 100%;
-  min-height: 80px;
+  min-height: 60px;
   padding: 2px 5px 2px 5px;
   font-family: 'RobotoCondensed Regular', sans-serif;
   font-size: 0.9em;
@@ -38,7 +39,7 @@
   flex-flow: row wrap;
   justify-content: space-around;
   width:100%;
-  border-top:2px solid #009869;
+  border-top:2px solid #9caa13;
   background-color:white
 } 
 
@@ -63,7 +64,7 @@
 }
 
 .blue {
-  background: #005977
+  background: #009fe3
 }
 
 .blinkBlue {
@@ -74,10 +75,10 @@
 
 @keyframes blinkBlue {  
   0% { color: #FFFFFF; }
-  100% { color: #005977; }
+  100% { color: #009fe3; }
 }
 @-webkit-keyframes blinkBlue {
-  0% { color: #005977; }
+  0% { color: #009fe3; }
   100% { color: #FFFFFF; }
 }
 
